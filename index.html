@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Write what ever you want</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <h4 id="login-name">______</h4>
+    <i class="fa-solid fa-user-minus" id="minus-user"></i>
+  </nav>
+
+  <div id="login-page">
+    <div id="start">
+      <button id="start-btn">Get Started</button>
+    </div>
+
+    <div id="login-div">
+      <input type="text" id="login-input" placeholder="Enter your name">
+      /t<button id="login-btn">Sign Up</button>
+    </div>
+  </div>
+
+  <main id="main">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Write Menu
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div id="saved-file" class="offcanvas-body">
+        <h3>Saved Files</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box">
+        <input id="input-box" type="text">
+      </div>
+      <div class="icons">
+        <i id="house-icon" class="fa-solid fa-house"></i>
+        <br>
+        <i id="save-icon" class="fa-solid fa-floppy-disk"></i>
+        <br>
+        <i id="upper-icon" class="fa-solid fa-u"></i>
+        <br>
+        <i id="lower-icon" class="fa-solid fa-l"></i>
+        <br>
+        <i id="font-icon" class="fa-solid fa-font"></i>
+        <br>
+        <i id='bold-icon' class="fa-solid fa-bold"></i>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
