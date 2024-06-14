@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+TC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+TC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+TC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+TC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 28, 37) !important;
+  color: #fff;
+}
+
+nav {
+  background-color: #87cefa;
+  height: 50px;
+  width: 100%;
+  color: rgb(18, 28, 37);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 17px;
+}
+
+nav h4 {
+  margin: 0px;
+}
+
+nav i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.btn-primary {
+  background-color: #87cefa !important;
+  border: none !important;
+  color: #181a1b !important;
+  margin: 20px 0px 0px 20px;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0px 15px #87cefa;
+}
+
+#main {
+  display: none;
+}
+
+#start {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#start-btn {
+  padding: 10px;
+  background-color: #87cefa;
+  color: rgb(18, 28, 37);
+  border: none;
+  border-radius: 4px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#start-btn:hover {
+  box-shadow: 0 0px 15px #87cefa;
+  border: none;
+}
+
+#login-div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#login-input {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  background-color: #87cefa;
+  width: 300px;
+}
+
+#login-input:hover {
+  box-shadow: 0 0px 15px #87cefa;
+}
+
+#login-input::placeholder {
+  color: rgb(18, 28, 37);
+}
+
+#login-btn {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  background-color: #87cefa;
+  color: rgb(18, 28, 37);
+}
+
+#login-btn:hover {
+  box-shadow: 0 0px 15px #87cefa;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+}
+
+.main-box {
+  height: 100%;
+  width: 80%;
+}
+
+.main-box input {
+  height: 100%;
+  width: 100%;
+  background-color: #181a1b;
+  color: #fff;
+  border: 2px solid #87cefa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main-box input:hover {
+  box-shadow: 0 0px 25px #87cefa;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #87cefa;
+  background-color: rgb(46, 60, 71);
+  color: #87cefa;
+}
+
+.offcanvas-body {
+  background-color: rgb(46, 60, 71);
+  color: #87cefa;
+}
+
+.icons {
+  margin-left: 30px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+.icons i:hover {
+  box-shadow: 0 0px 10px #87cefa;
+  background-color: #87cefa;
+  border-radius: 4px;
+}
