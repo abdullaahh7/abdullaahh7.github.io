@@ -23,16 +23,18 @@ function getLoginInput() {
   loginName.innerText = loginInputVal
 }
 
+
 loginBtn.onclick = () => {
   if (loginInput.value == '') {
     alert('You must give your name')
   } else {
     getLoginInput()
     minusUser.style.display = 'none'
-    const newI = document.createElement('i')
+    let newI = document.createElement('i')
     newI.classList.add("fa-solid", "fa-user")
     navbar.appendChild(newI)
   }
+  loginBtn.disabled = true;
 }
 
 startBtn.onclick = () => {
@@ -78,11 +80,13 @@ function fontFunc() {
 
 fontIcon.onclick = () => {
   fontFunc()
+  storeData(inputBox.value)
 }
 
 saveIcon.onclick = () => {
   savingFile()
   alert('Your file has been saved')
+  storeData(inputBox.value)
 }
 
 function boldInput() {
@@ -95,6 +99,7 @@ boldIcon.onclick = () => {
   } else {
     inputBox.style.fontWeight = '400'
   }
+  storeData(inputBox.value)
 }
 
 function upperClick() {
@@ -103,6 +108,7 @@ function upperClick() {
 
 upperIcon.onclick = () => {
   upperClick()
+  storeData(inputBox.value)
 }
 
 function lowerClick() {
@@ -111,16 +117,20 @@ function lowerClick() {
 
 lowerIcon.onclick = () => {
   lowerClick()
+  storeData(inputBox.value)
 }
 
 homeIcon.onclick = () => {
   inputBox.value = ''
+  storeData(inputBox.value)
 }
 
-const input_serialized = JSON.stringify(inputBox.value)
-console.log(input_serialized)
-localStorage.setItem("data", input_serialized)
-console.log(localStorage)
+function storeData(inputVal) {
+  localStorage.setItem('myDataKey', JSON.stringify(inputVal));
+}
 
-let input_deserialized = JSON.parse(localStorage.getItem("data"))
-console.log(input_deserialized)
+function showData() {
+  let savedData = JSON.parse(localStorage.getItem('myDataKey'));
+  return savedData
+}
+showData()
