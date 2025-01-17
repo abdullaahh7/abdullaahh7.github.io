@@ -14,7 +14,8 @@
 }
 
 body {
-  background-color: rgb(18, 28, 37) !important;
+  /* background-color: rgb(18, 28, 37) !important; */
+  background-color: #cd2151;
   color: #fff;
 }
 
